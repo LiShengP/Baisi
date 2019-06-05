@@ -15,6 +15,9 @@
 		0058410922A7B0F6006AC6EA /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058410822A7B0F6006AC6EA /* XMGMeViewController.m */; };
 		00EF982422A7800400C04569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EF982322A7800400C04569 /* Assets.xcassets */; };
 		00F32C0922A7B5F700B99C9E /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F32C0822A7B5F700B99C9E /* XMGTabBarController.m */; };
+		00F8EC7222A7FB2C008EBEB8 /* XMGPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EC7122A7FB2C008EBEB8 /* XMGPublishViewController.m */; };
+		00F8EC7622A7FD79008EBEB8 /* UIImage+renderImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EC7522A7FD79008EBEB8 /* UIImage+renderImage.m */; };
+		00F8EC7922A8005D008EBEB8 /* UITabBarItem+fontAndColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EC7822A8005D008EBEB8 /* UITabBarItem+fontAndColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,12 @@
 		00EF982822A7800400C04569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F32C0722A7B5F700B99C9E /* XMGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
 		00F32C0822A7B5F700B99C9E /* XMGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
+		00F8EC7022A7FB2C008EBEB8 /* XMGPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGPublishViewController.h; sourceTree = "<group>"; };
+		00F8EC7122A7FB2C008EBEB8 /* XMGPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGPublishViewController.m; sourceTree = "<group>"; };
+		00F8EC7422A7FD79008EBEB8 /* UIImage+renderImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+renderImage.h"; sourceTree = "<group>"; };
+		00F8EC7522A7FD79008EBEB8 /* UIImage+renderImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+renderImage.m"; sourceTree = "<group>"; };
+		00F8EC7722A8005D008EBEB8 /* UITabBarItem+fontAndColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+fontAndColor.h"; sourceTree = "<group>"; };
+		00F8EC7822A8005D008EBEB8 /* UITabBarItem+fontAndColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+fontAndColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,7 @@
 		005840DE22A7AB47006AC6EA /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				00F8EC7322A7FD50008EBEB8 /* Category */,
 				005840DF22A7AB47006AC6EA /* AppDelegate.h */,
 				005840E122A7AB47006AC6EA /* AppDelegate.m */,
 				005840E022A7AB47006AC6EA /* main.m */,
@@ -274,6 +284,8 @@
 		005840FB22A7B003006AC6EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				00F8EC7022A7FB2C008EBEB8 /* XMGPublishViewController.h */,
+				00F8EC7122A7FB2C008EBEB8 /* XMGPublishViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,6 +351,17 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		00F8EC7322A7FD50008EBEB8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				00F8EC7422A7FD79008EBEB8 /* UIImage+renderImage.h */,
+				00F8EC7522A7FD79008EBEB8 /* UIImage+renderImage.m */,
+				00F8EC7722A8005D008EBEB8 /* UITabBarItem+fontAndColor.h */,
+				00F8EC7822A8005D008EBEB8 /* UITabBarItem+fontAndColor.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,8 +438,11 @@
 				0058410622A7B0D4006AC6EA /* XMGFriendTrendViewController.m in Sources */,
 				0058410922A7B0F6006AC6EA /* XMGMeViewController.m in Sources */,
 				0058410322A7B0B6006AC6EA /* XMGNewsViewController.m in Sources */,
+				00F8EC7922A8005D008EBEB8 /* UITabBarItem+fontAndColor.m in Sources */,
 				005840EA22A7AB47006AC6EA /* main.m in Sources */,
 				00F32C0922A7B5F700B99C9E /* XMGTabBarController.m in Sources */,
+				00F8EC7222A7FB2C008EBEB8 /* XMGPublishViewController.m in Sources */,
+				00F8EC7622A7FD79008EBEB8 /* UIImage+renderImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
