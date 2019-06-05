@@ -52,6 +52,9 @@
 		005840DD22A7AB47006AC6EA /* Essence(精华) */ = {
 			isa = PBXGroup;
 			children = (
+				005840EE22A7AFC1006AC6EA /* Controller */,
+				005840EC22A7AFC1006AC6EA /* Model */,
+				005840ED22A7AFC1006AC6EA /* View */,
 			);
 			path = "Essence(精华)";
 			sourceTree = "<group>";
@@ -69,6 +72,9 @@
 		005840E222A7AB47006AC6EA /* New(新帖) */ = {
 			isa = PBXGroup;
 			children = (
+				005840EF22A7AFD2006AC6EA /* Controller */,
+				005840F122A7AFD2006AC6EA /* Model */,
+				005840F022A7AFD2006AC6EA /* View */,
 			);
 			path = "New(新帖)";
 			sourceTree = "<group>";
@@ -76,6 +82,9 @@
 		005840E322A7AB47006AC6EA /* FriendTrend(关注) */ = {
 			isa = PBXGroup;
 			children = (
+				005840F322A7AFE1006AC6EA /* Controller */,
+				005840F422A7AFE1006AC6EA /* Model */,
+				005840F222A7AFE1006AC6EA /* View */,
 			);
 			path = "FriendTrend(关注)";
 			sourceTree = "<group>";
@@ -83,6 +92,9 @@
 		005840E422A7AB47006AC6EA /* Setting(设置) */ = {
 			isa = PBXGroup;
 			children = (
+				005840F522A7AFEA006AC6EA /* Controller */,
+				005840F622A7AFEA006AC6EA /* Model */,
+				005840F722A7AFEA006AC6EA /* View */,
 			);
 			path = "Setting(设置)";
 			sourceTree = "<group>";
@@ -104,6 +116,9 @@
 		005840E722A7AB47006AC6EA /* Me(我) */ = {
 			isa = PBXGroup;
 			children = (
+				005840FA22A7AFF7006AC6EA /* Controller */,
+				005840F822A7AFF7006AC6EA /* Model */,
+				005840F922A7AFF7006AC6EA /* View */,
 			);
 			path = "Me(我)";
 			sourceTree = "<group>";
@@ -118,8 +133,137 @@
 		005840E922A7AB47006AC6EA /* Publish(发布) */ = {
 			isa = PBXGroup;
 			children = (
+				005840FB22A7B003006AC6EA /* Controller */,
+				005840FC22A7B003006AC6EA /* Model */,
+				005840FD22A7B003006AC6EA /* View */,
 			);
 			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		005840EC22A7AFC1006AC6EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		005840ED22A7AFC1006AC6EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005840EE22A7AFC1006AC6EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		005840EF22A7AFD2006AC6EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		005840F022A7AFD2006AC6EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005840F122A7AFD2006AC6EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		005840F222A7AFE1006AC6EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005840F322A7AFE1006AC6EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		005840F422A7AFE1006AC6EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		005840F522A7AFEA006AC6EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		005840F622A7AFEA006AC6EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		005840F722A7AFEA006AC6EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005840F822A7AFF7006AC6EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		005840F922A7AFF7006AC6EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005840FA22A7AFF7006AC6EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		005840FB22A7B003006AC6EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		005840FC22A7B003006AC6EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		005840FD22A7B003006AC6EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		00EF980E22A7800200C04569 = {
