@@ -9,16 +9,31 @@
 /* Begin PBXBuildFile section */
 		005840EA22A7AB47006AC6EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 005840E022A7AB47006AC6EA /* main.m */; };
 		005840EB22A7AB47006AC6EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 005840E122A7AB47006AC6EA /* AppDelegate.m */; };
+		0058410022A7B099006AC6EA /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005840FF22A7B099006AC6EA /* XMGEssenceViewController.m */; };
+		0058410322A7B0B6006AC6EA /* XMGNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058410222A7B0B6006AC6EA /* XMGNewsViewController.m */; };
+		0058410622A7B0D4006AC6EA /* XMGFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058410522A7B0D4006AC6EA /* XMGFriendTrendViewController.m */; };
+		0058410922A7B0F6006AC6EA /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058410822A7B0F6006AC6EA /* XMGMeViewController.m */; };
 		00EF982422A7800400C04569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EF982322A7800400C04569 /* Assets.xcassets */; };
+		00F32C0922A7B5F700B99C9E /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F32C0822A7B5F700B99C9E /* XMGTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		005840DF22A7AB47006AC6EA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		005840E022A7AB47006AC6EA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		005840E122A7AB47006AC6EA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		005840FE22A7B099006AC6EA /* XMGEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGEssenceViewController.h; sourceTree = "<group>"; };
+		005840FF22A7B099006AC6EA /* XMGEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
+		0058410122A7B0B6006AC6EA /* XMGNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGNewsViewController.h; sourceTree = "<group>"; };
+		0058410222A7B0B6006AC6EA /* XMGNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGNewsViewController.m; sourceTree = "<group>"; };
+		0058410422A7B0D4006AC6EA /* XMGFriendTrendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGFriendTrendViewController.h; sourceTree = "<group>"; };
+		0058410522A7B0D4006AC6EA /* XMGFriendTrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGFriendTrendViewController.m; sourceTree = "<group>"; };
+		0058410722A7B0F6006AC6EA /* XMGMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
+		0058410822A7B0F6006AC6EA /* XMGMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
 		00EF981722A7800200C04569 /* Baisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00EF982322A7800400C04569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00EF982822A7800400C04569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F32C0722A7B5F700B99C9E /* XMGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTabBarController.h; sourceTree = "<group>"; };
+		00F32C0822A7B5F700B99C9E /* XMGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +124,9 @@
 		005840E622A7AB47006AC6EA /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				00F32C0422A7B5C300B99C9E /* Controller */,
+				00F32C0622A7B5C300B99C9E /* Model */,
+				00F32C0522A7B5C300B99C9E /* View */,
 			);
 			path = "Main(主要)";
 			sourceTree = "<group>";
@@ -157,6 +175,8 @@
 		005840EE22A7AFC1006AC6EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				005840FE22A7B099006AC6EA /* XMGEssenceViewController.h */,
+				005840FF22A7B099006AC6EA /* XMGEssenceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +184,8 @@
 		005840EF22A7AFD2006AC6EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0058410122A7B0B6006AC6EA /* XMGNewsViewController.h */,
+				0058410222A7B0B6006AC6EA /* XMGNewsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +214,8 @@
 		005840F322A7AFE1006AC6EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0058410422A7B0D4006AC6EA /* XMGFriendTrendViewController.h */,
+				0058410522A7B0D4006AC6EA /* XMGFriendTrendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,6 +265,8 @@
 		005840FA22A7AFF7006AC6EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0058410722A7B0F6006AC6EA /* XMGMeViewController.h */,
+				0058410822A7B0F6006AC6EA /* XMGMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +318,29 @@
 			path = Baisi;
 			sourceTree = "<group>";
 		};
+		00F32C0422A7B5C300B99C9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00F32C0722A7B5F700B99C9E /* XMGTabBarController.h */,
+				00F32C0822A7B5F700B99C9E /* XMGTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00F32C0522A7B5C300B99C9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00F32C0622A7B5C300B99C9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,7 +367,7 @@
 		00EF980F22A7800200C04569 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = ZK;
+				CLASSPREFIX = XMG;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = com.kuaijianzhiliao;
 				TargetAttributes = {
@@ -361,8 +410,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0058410022A7B099006AC6EA /* XMGEssenceViewController.m in Sources */,
 				005840EB22A7AB47006AC6EA /* AppDelegate.m in Sources */,
+				0058410622A7B0D4006AC6EA /* XMGFriendTrendViewController.m in Sources */,
+				0058410922A7B0F6006AC6EA /* XMGMeViewController.m in Sources */,
+				0058410322A7B0B6006AC6EA /* XMGNewsViewController.m in Sources */,
 				005840EA22A7AB47006AC6EA /* main.m in Sources */,
+				00F32C0922A7B5F700B99C9E /* XMGTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
