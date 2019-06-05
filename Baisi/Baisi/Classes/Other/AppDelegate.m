@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+
+#import "XMGTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    XMGTabBarController *tabbarVC = [[XMGTabBarController alloc]init];
+    
+    self.window.rootViewController = tabbarVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
