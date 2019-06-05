@@ -97,6 +97,7 @@
 		00EF980F22A7800200C04569 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZK;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = com.kuaijianzhiliao;
 				TargetAttributes = {
@@ -285,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83SA6MLK36;
 				INFOPLIST_FILE = Baisi/Info.plist;
@@ -303,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83SA6MLK36;
 				INFOPLIST_FILE = Baisi/Info.plist;
