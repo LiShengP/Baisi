@@ -1,0 +1,28 @@
+//
+//  Baisi.pch
+//  Baisi
+//
+//  Created by edz on 2019/6/6.
+//  Copyright © 2019年 com.kuaijianzhiliao. All rights reserved.
+//
+
+#ifndef Baisi_pch
+#define Baisi_pch
+
+#import "UIBarButtonItem+item.h"
+
+//自定义log
+#ifdef DEBUG
+#define XMGLog(...) NSLog(__VA_ARGS__);
+#else
+#define XMGLog(...)
+#endif
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Baisi_pch */
+
+
+

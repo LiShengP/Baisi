@@ -7,7 +7,6 @@
 //
 
 #import "XMGMeViewController.h"
-#import "UIBarButtonItem+item.h"
 
 @interface XMGMeViewController ()
 
@@ -39,12 +38,12 @@
 
 -(void)settingModeBtnClick
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 -(void)nightModeBtnClick:(UIButton *)button
 {
     button.selected = !button.selected;
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 #pragma mark - Table view data source
@@ -115,6 +114,6 @@
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 @end

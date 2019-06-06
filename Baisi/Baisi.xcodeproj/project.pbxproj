@@ -49,6 +49,7 @@
 		00F8EC7A22A8ECC5008EBEB8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		00F8EC7C22A8FECB008EBEB8 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
 		00F8EC7D22A8FECB008EBEB8 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
+		00F8EC7F22A91193008EBEB8 /* Baisi.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Baisi.pch; sourceTree = "<group>"; };
 		4C97EC16815A8F1203876A45 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D0A4D4F6E0D167F5F8E95E /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		551AEB4FBBE2F088D6D7C3C4 /* Pods-Baisi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.release.xcconfig"; path = "Target Support Files/Pods-Baisi/Pods-Baisi.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 				005840DF22A7AB47006AC6EA /* AppDelegate.h */,
 				005840E122A7AB47006AC6EA /* AppDelegate.m */,
 				005840E022A7AB47006AC6EA /* main.m */,
+				00F8EC7F22A91193008EBEB8 /* Baisi.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -647,6 +649,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83SA6MLK36;
+				GCC_PREFIX_HEADER = Baisi/Classes/Other/Baisi.pch;
 				INFOPLIST_FILE = Baisi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,6 +670,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83SA6MLK36;
+				GCC_PREFIX_HEADER = Baisi/Classes/Other/Baisi.pch;
 				INFOPLIST_FILE = Baisi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

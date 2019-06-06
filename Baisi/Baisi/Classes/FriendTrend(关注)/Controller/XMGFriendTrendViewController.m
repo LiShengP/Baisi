@@ -7,7 +7,6 @@
 //
 
 #import "XMGFriendTrendViewController.h"
-#import "UIBarButtonItem+item.h"
 
 @interface XMGFriendTrendViewController ()
 
@@ -36,7 +35,7 @@
 /// 朋友推荐
 -(void)friendsRecomment
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 /*
@@ -51,7 +50,7 @@
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 @end

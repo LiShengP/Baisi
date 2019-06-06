@@ -7,7 +7,6 @@
 //
 
 #import "XMGNewsViewController.h"
-#import "UIBarButtonItem+item.h"
 
 @interface XMGNewsViewController ()
 
@@ -34,7 +33,7 @@
 
 -(void)subTag
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 /*
@@ -49,7 +48,7 @@
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 @end

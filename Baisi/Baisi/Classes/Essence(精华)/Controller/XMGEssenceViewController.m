@@ -7,7 +7,7 @@
 //
 
 #import "XMGEssenceViewController.h"
-#import "UIBarButtonItem+item.h"
+
 
 @interface XMGEssenceViewController ()
 
@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    
+    XMGLog(@"%s",__func__);
     [self setupNavBar];
+    
     
 }
 
@@ -37,17 +38,17 @@
 
 -(void)gameClick
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 -(void)rigtClick
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 -(void)dealloc
 {
-    NSLog(@"%s",__func__);
+    XMGLog(@"%s",__func__);
 }
 
 @end
