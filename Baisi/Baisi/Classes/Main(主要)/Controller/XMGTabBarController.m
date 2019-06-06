@@ -17,6 +17,8 @@
 
 @interface XMGTabBarController ()
 
+@property (nonatomic,strong) UIButton *plusButton;
+
 @end
 
 @implementation XMGTabBarController
@@ -34,16 +36,24 @@
     });
 }
 
+-(UIButton *)plusButton
+{
+    if (_plusButton == nil) {
+        //添加中间加号按钮
+        _plusButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_plusButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+        [_plusButton setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        [_plusButton sizeToFit];
+        [self.tabBar addSubview:_plusButton];
+    }
+    return _plusButton;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //添加中间加号按钮
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-    [btn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
-    [btn sizeToFit];
-    [self.tabBar addSubview:btn];
-    btn.center = CGPointMake(self.tabBar.bounds.size.width * 0.5, self.tabBar.bounds.size.height * 0.5);
+    
+    self.plusButton.center = CGPointMake(self.tabBar.bounds.size.width * 0.5, self.tabBar.bounds.size.height * 0.5);
     
     [self addAllChildViewController];
     [self setupAllTitleButton];
@@ -62,7 +72,7 @@
     [self addChildViewController:nav2];
     
     //发布
-    XMGPublishViewController *vc3 = [[XMGPublishViewController alloc]init];
+    UIViewController *vc3 = [[UIViewController alloc]init];
     [self addChildViewController:vc3];
     
     //关注
@@ -91,8 +101,9 @@
     nav2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
     nav2.tabBarItem.selectedImage = [UIImage imageWithRenderImageName:@"tabBar_new_click_icon"];
     
-    // 中间按钮使用自定义按钮
-//    UIViewController *vc = self.childViewControllers[2];
+    // 中间按钮使用自定义按钮,设置中间部分不可点击
+    UIViewController *vc = self.childViewControllers[2];
+    vc.tabBarItem.enabled = NO;
 //    vc.tabBarItem.image = [UIImage imageWithRenderImageName:@"tabBar_publish_icon"];
 //    vc.tabBarItem.selectedImage = [UIImage imageWithRenderImageName:@"tabBar_publish_click_icon"];
 //    vc.tabBarItem.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
