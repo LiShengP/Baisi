@@ -17,8 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor grayColor];
     
+    [self setupNavBar];
+    
+}
+
+-(void)setupNavBar
+{
     //栈顶控制器才能设置导航条，不能用导航控制器去设置导航条
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
@@ -27,7 +33,6 @@
     
     UIBarButtonItem *rigthBtn = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"navigationButtonRandom"] highImage:[UIImage imageNamed:@"navigationButtonRandomClick"] target:self action:@selector(rigtClick)];
     self.navigationItem.rightBarButtonItem = rigthBtn;
-    
 }
 
 -(void)gameClick

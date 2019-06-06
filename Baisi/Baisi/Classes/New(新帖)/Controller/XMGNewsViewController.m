@@ -7,6 +7,7 @@
 //
 
 #import "XMGNewsViewController.h"
+#import "UIBarButtonItem+item.h"
 
 @interface XMGNewsViewController ()
 
@@ -18,7 +19,22 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor greenColor];
+    [self setupNavBar];
+}
+
+-(void)setupNavBar
+{
+    //栈顶控制器才能设置导航条，不能用导航控制器去设置导航条
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
+    UIBarButtonItem *leftBtn = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(subTag)];
+    self.navigationItem.leftBarButtonItem = leftBtn;
+    
+}
+
+-(void)subTag
+{
+    NSLog(@"%s",__func__);
 }
 
 /*

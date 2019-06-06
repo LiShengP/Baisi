@@ -7,6 +7,7 @@
 //
 
 #import "XMGMeViewController.h"
+#import "UIBarButtonItem+item.h"
 
 @interface XMGMeViewController ()
 
@@ -18,11 +19,32 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];
     
+    [self setupNavBar];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)setupNavBar
+{
+    //栈顶控制器才能设置导航条，不能用导航控制器去设置导航条
+    self.navigationItem.title = @"我的";
+    
+    UIBarButtonItem *settingMode = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(settingModeBtnClick)];
+    UIBarButtonItem *nightMode = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] selectImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(nightModeBtnClick:)];
+    self.navigationItem.rightBarButtonItems = @[settingMode,nightMode];
+}
+
+-(void)settingModeBtnClick
+{
+    NSLog(@"%s",__func__);
+}
+-(void)nightModeBtnClick:(UIButton *)button
+{
+    button.selected = !button.selected;
+    NSLog(@"%s",__func__);
 }
 
 #pragma mark - Table view data source

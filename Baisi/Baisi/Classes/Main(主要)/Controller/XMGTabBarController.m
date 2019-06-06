@@ -97,7 +97,7 @@
 //    [nav1.tabBarItem setupItemWithfont:[UIFont systemFontOfSize:12.0] color:[UIColor blackColor]];
     
     UINavigationController *nav2 = self.childViewControllers[1];
-    nav2.tabBarItem.title = @"社区";
+    nav2.tabBarItem.title = @"新帖";
     nav2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
     nav2.tabBarItem.selectedImage = [UIImage imageWithRenderImageName:@"tabBar_new_click_icon"];
     
@@ -114,7 +114,7 @@
     nav4.tabBarItem.selectedImage = [UIImage imageWithRenderImageName:@"tabBar_friendTrends_click_icon"];
     
     UINavigationController *nav5 = self.childViewControllers[4];
-    nav5.tabBarItem.title = @"我的";
+    nav5.tabBarItem.title = @"我";
     nav5.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
     nav5.tabBarItem.selectedImage = [UIImage imageWithRenderImageName:@"tabBar_me_click_icon"];
 }

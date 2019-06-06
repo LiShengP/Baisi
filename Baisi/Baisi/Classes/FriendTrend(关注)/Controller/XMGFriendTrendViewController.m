@@ -7,6 +7,7 @@
 //
 
 #import "XMGFriendTrendViewController.h"
+#import "UIBarButtonItem+item.h"
 
 @interface XMGFriendTrendViewController ()
 
@@ -17,8 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor grayColor];
+    [self setupNavBar];
+}
+
+-(void)setupNavBar
+{
+    //栈顶控制器才能设置导航条，不能用导航控制器去设置导航条
+    self.navigationItem.title = @"我的关注";
     
+    UIBarButtonItem *leftBtn = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(friendsRecomment)];
+    self.navigationItem.leftBarButtonItem = leftBtn;
+    
+    
+}
+
+/// 朋友推荐
+-(void)friendsRecomment
+{
+    NSLog(@"%s",__func__);
 }
 
 /*
