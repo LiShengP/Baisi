@@ -5,5 +5,9 @@ pod 'SDWebImage', '~> 3.7.5'
 
 pod 'MJRefresh'
 
+pod 'SDCycleScrollView','~> 1.6'
+
+pod 'Masonry'
+
 end
 

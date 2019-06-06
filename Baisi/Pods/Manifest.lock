@@ -1,22 +1,31 @@
 PODS:
+  - Masonry (1.1.0)
   - MJRefresh (3.2.0)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
 
 DEPENDENCIES:
+  - Masonry
   - MJRefresh
+  - SDCycleScrollView (~> 1.6)
   - SDWebImage (~> 3.7.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Masonry
     - MJRefresh
+    - SDCycleScrollView
     - SDWebImage
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-PODFILE CHECKSUM: faafbcad2ce11eb31d5703614c1cbf89402239d2
+PODFILE CHECKSUM: 6d8bf80438ffa556ef2910a360ba04aa04b2f86a
 
 COCOAPODS: 1.7.1
