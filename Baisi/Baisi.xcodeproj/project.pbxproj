@@ -19,6 +19,7 @@
 		00F8EC7622A7FD79008EBEB8 /* UIImage+renderImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EC7522A7FD79008EBEB8 /* UIImage+renderImage.m */; };
 		00F8EC7922A8005D008EBEB8 /* UITabBarItem+fontAndColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EC7822A8005D008EBEB8 /* UITabBarItem+fontAndColor.m */; };
 		00F8EC7B22A8ECC5008EBEB8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 00F8EC7A22A8ECC5008EBEB8 /* Podfile */; };
+		00F8EC7E22A8FECB008EBEB8 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EC7D22A8FECB008EBEB8 /* UIBarButtonItem+item.m */; };
 		BB47418437D639F497F9D641 /* libPods-Baisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C97EC16815A8F1203876A45 /* libPods-Baisi.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		00F8EC7722A8005D008EBEB8 /* UITabBarItem+fontAndColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+fontAndColor.h"; sourceTree = "<group>"; };
 		00F8EC7822A8005D008EBEB8 /* UITabBarItem+fontAndColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+fontAndColor.m"; sourceTree = "<group>"; };
 		00F8EC7A22A8ECC5008EBEB8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		00F8EC7C22A8FECB008EBEB8 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		00F8EC7D22A8FECB008EBEB8 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
 		4C97EC16815A8F1203876A45 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D0A4D4F6E0D167F5F8E95E /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		551AEB4FBBE2F088D6D7C3C4 /* Pods-Baisi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.release.xcconfig"; path = "Target Support Files/Pods-Baisi/Pods-Baisi.release.xcconfig"; sourceTree = "<group>"; };
@@ -370,6 +373,8 @@
 				00F8EC7522A7FD79008EBEB8 /* UIImage+renderImage.m */,
 				00F8EC7722A8005D008EBEB8 /* UITabBarItem+fontAndColor.h */,
 				00F8EC7822A8005D008EBEB8 /* UITabBarItem+fontAndColor.m */,
+				00F8EC7C22A8FECB008EBEB8 /* UIBarButtonItem+item.h */,
+				00F8EC7D22A8FECB008EBEB8 /* UIBarButtonItem+item.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -511,6 +516,7 @@
 				0058410922A7B0F6006AC6EA /* XMGMeViewController.m in Sources */,
 				0058410322A7B0B6006AC6EA /* XMGNewsViewController.m in Sources */,
 				00F8EC7922A8005D008EBEB8 /* UITabBarItem+fontAndColor.m in Sources */,
+				00F8EC7E22A8FECB008EBEB8 /* UIBarButtonItem+item.m in Sources */,
 				005840EA22A7AB47006AC6EA /* main.m in Sources */,
 				00F32C0922A7B5F700B99C9E /* XMGTabBarController.m in Sources */,
 				00F8EC7222A7FB2C008EBEB8 /* XMGPublishViewController.m in Sources */,
