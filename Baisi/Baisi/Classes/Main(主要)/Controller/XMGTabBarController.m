@@ -17,7 +17,7 @@
 
 @interface XMGTabBarController ()
 
-@property (nonatomic,strong) UIButton *plusButton;
+@property (nonatomic,strong) UIButton *plusButton;//中间加号按钮
 
 @end
 
