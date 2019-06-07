@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];
+    XMGLog(@"%s",__func__);
     
     [self setupNavBar];
     // Uncomment the following line to preserve selection between presentations.

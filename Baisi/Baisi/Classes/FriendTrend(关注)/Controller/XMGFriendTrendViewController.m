@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    XMGLog(@"%s",__func__);
     self.view.backgroundColor = [UIColor grayColor];
     [self setupNavBar];
 }
