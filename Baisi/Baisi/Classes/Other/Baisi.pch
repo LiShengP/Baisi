@@ -10,6 +10,7 @@
 #define Baisi_pch
 
 #import "UIBarButtonItem+item.h"
+#import "UIView+frame.h"
 
 //自定义log
 #ifdef DEBUG

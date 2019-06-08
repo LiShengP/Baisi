@@ -7,6 +7,7 @@
 //
 
 #import "XMGMeViewController.h"
+#import "XMGSettingViewController.h"
 
 @interface XMGMeViewController ()
 
@@ -40,6 +41,13 @@
 -(void)settingModeBtnClick
 {
     XMGLog(@"%s",__func__);
+    XMGSettingViewController *settingVC = [[XMGSettingViewController alloc]init];
+    settingVC.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:settingVC animated:YES];
+    
+    
+    
 }
 -(void)nightModeBtnClick:(UIButton *)button
 {

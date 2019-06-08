@@ -14,6 +14,7 @@
 #import "XMGPublishViewController.h"
 #import "UIImage+renderImage.h"
 #import "UITabBarItem+fontAndColor.h"
+#import "XMGNavigationController.h"
 
 @interface XMGTabBarController ()
 
@@ -28,11 +29,18 @@
     //使用apperance只设置一次即可
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        UITabBarItem *tabbarItem = [UITabBarItem appearance];
+        UITabBarItem *tabbarItem = [UITabBarItem appearanceWhenContainedInInstancesOfClasses:@[self]];
         NSMutableDictionary *attr = [NSMutableDictionary dictionary];
         attr[NSFontAttributeName] = [UIFont systemFontOfSize:12.0];
-        attr[NSForegroundColorAttributeName] = [UIColor blackColor];
+        attr[NSForegroundColorAttributeName] = [UIColor grayColor];
         [tabbarItem setTitleTextAttributes:attr forState:UIControlStateNormal];
+        
+        NSMutableDictionary *attrSelect = [NSMutableDictionary dictionary];
+        attrSelect[NSFontAttributeName] = [UIFont systemFontOfSize:12.0];
+        attrSelect[NSForegroundColorAttributeName] = [UIColor blackColor];
+        [tabbarItem setTitleTextAttributes:attrSelect forState:UIControlStateSelected];
+        
+        
     });
 }
 
@@ -63,12 +71,12 @@
 {
     //首页
     XMGEssenceViewController *vc1 = [[XMGEssenceViewController alloc]init];
-    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:vc1];
+    XMGNavigationController *nav1 = [[XMGNavigationController alloc]initWithRootViewController:vc1];
     [self addChildViewController:nav1];
     
     //社区
     XMGNewsViewController *vc2 = [[XMGNewsViewController alloc]init];
-    UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:vc2];
+    XMGNavigationController *nav2 = [[XMGNavigationController alloc]initWithRootViewController:vc2];
     [self addChildViewController:nav2];
     
     //发布
@@ -77,12 +85,12 @@
     
     //关注
     XMGFriendTrendViewController *vc4 = [[XMGFriendTrendViewController alloc]init];
-    UINavigationController *nav4 = [[UINavigationController alloc]initWithRootViewController:vc4];
+    XMGNavigationController *nav4 = [[XMGNavigationController alloc]initWithRootViewController:vc4];
     [self addChildViewController:nav4];
     
     //我的
     XMGMeViewController *vc5 = [[XMGMeViewController alloc]init];
-    UINavigationController *nav5 = [[UINavigationController alloc]initWithRootViewController:vc5];
+    XMGNavigationController *nav5 = [[XMGNavigationController alloc]initWithRootViewController:vc5];
     [self addChildViewController:nav5];
 }
 

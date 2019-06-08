@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000ACBBA22AA71EB00B32DD8 /* XMGSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000ACBB922AA71EB00B32DD8 /* XMGSettingViewController.m */; };
+		000ACBBD22AA74DA00B32DD8 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 000ACBBC22AA74DA00B32DD8 /* UIView+frame.m */; };
+		000ACBC022AA7B1B00B32DD8 /* XMGNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 000ACBBF22AA7B1B00B32DD8 /* XMGNavigationBar.m */; };
+		000ACBC322AA7D0300B32DD8 /* XMGNavBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000ACBC222AA7D0300B32DD8 /* XMGNavBackView.m */; };
 		005840EA22A7AB47006AC6EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 005840E022A7AB47006AC6EA /* main.m */; };
 		005840EB22A7AB47006AC6EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 005840E122A7AB47006AC6EA /* AppDelegate.m */; };
 		0058410022A7B099006AC6EA /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005840FF22A7B099006AC6EA /* XMGEssenceViewController.m */; };
 		0058410322A7B0B6006AC6EA /* XMGNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058410222A7B0B6006AC6EA /* XMGNewsViewController.m */; };
 		0058410622A7B0D4006AC6EA /* XMGFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058410522A7B0D4006AC6EA /* XMGFriendTrendViewController.m */; };
 		0058410922A7B0F6006AC6EA /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0058410822A7B0F6006AC6EA /* XMGMeViewController.m */; };
+		006D73E022AA314E00D24B4A /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006D73DF22AA314E00D24B4A /* XMGNavigationController.m */; };
 		00EF982422A7800400C04569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EF982322A7800400C04569 /* Assets.xcassets */; };
 		00F32C0922A7B5F700B99C9E /* XMGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F32C0822A7B5F700B99C9E /* XMGTabBarController.m */; };
 		00F8EC7222A7FB2C008EBEB8 /* XMGPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EC7122A7FB2C008EBEB8 /* XMGPublishViewController.m */; };
@@ -24,6 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000ACBB822AA71EB00B32DD8 /* XMGSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGSettingViewController.h; sourceTree = "<group>"; };
+		000ACBB922AA71EB00B32DD8 /* XMGSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGSettingViewController.m; sourceTree = "<group>"; };
+		000ACBBB22AA74DA00B32DD8 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		000ACBBC22AA74DA00B32DD8 /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		000ACBBE22AA7B1B00B32DD8 /* XMGNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGNavigationBar.h; sourceTree = "<group>"; };
+		000ACBBF22AA7B1B00B32DD8 /* XMGNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGNavigationBar.m; sourceTree = "<group>"; };
+		000ACBC122AA7D0300B32DD8 /* XMGNavBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGNavBackView.h; sourceTree = "<group>"; };
+		000ACBC222AA7D0300B32DD8 /* XMGNavBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGNavBackView.m; sourceTree = "<group>"; };
 		005840DF22A7AB47006AC6EA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		005840E022A7AB47006AC6EA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		005840E122A7AB47006AC6EA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +48,8 @@
 		0058410522A7B0D4006AC6EA /* XMGFriendTrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGFriendTrendViewController.m; sourceTree = "<group>"; };
 		0058410722A7B0F6006AC6EA /* XMGMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
 		0058410822A7B0F6006AC6EA /* XMGMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
+		006D73DE22AA314E00D24B4A /* XMGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGNavigationController.h; sourceTree = "<group>"; };
+		006D73DF22AA314E00D24B4A /* XMGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGNavigationController.m; sourceTree = "<group>"; };
 		00EF981722A7800200C04569 /* Baisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00EF982322A7800400C04569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00EF982822A7800400C04569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -253,6 +268,8 @@
 		005840F522A7AFEA006AC6EA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				000ACBB822AA71EB00B32DD8 /* XMGSettingViewController.h */,
+				000ACBB922AA71EB00B32DD8 /* XMGSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,6 +367,8 @@
 			children = (
 				00F32C0722A7B5F700B99C9E /* XMGTabBarController.h */,
 				00F32C0822A7B5F700B99C9E /* XMGTabBarController.m */,
+				006D73DE22AA314E00D24B4A /* XMGNavigationController.h */,
+				006D73DF22AA314E00D24B4A /* XMGNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -357,6 +376,10 @@
 		00F32C0522A7B5C300B99C9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				000ACBBE22AA7B1B00B32DD8 /* XMGNavigationBar.h */,
+				000ACBBF22AA7B1B00B32DD8 /* XMGNavigationBar.m */,
+				000ACBC122AA7D0300B32DD8 /* XMGNavBackView.h */,
+				000ACBC222AA7D0300B32DD8 /* XMGNavBackView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -377,6 +400,8 @@
 				00F8EC7822A8005D008EBEB8 /* UITabBarItem+fontAndColor.m */,
 				00F8EC7C22A8FECB008EBEB8 /* UIBarButtonItem+item.h */,
 				00F8EC7D22A8FECB008EBEB8 /* UIBarButtonItem+item.m */,
+				000ACBBB22AA74DA00B32DD8 /* UIView+frame.h */,
+				000ACBBC22AA74DA00B32DD8 /* UIView+frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -512,13 +537,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000ACBBA22AA71EB00B32DD8 /* XMGSettingViewController.m in Sources */,
+				006D73E022AA314E00D24B4A /* XMGNavigationController.m in Sources */,
 				0058410022A7B099006AC6EA /* XMGEssenceViewController.m in Sources */,
 				005840EB22A7AB47006AC6EA /* AppDelegate.m in Sources */,
+				000ACBBD22AA74DA00B32DD8 /* UIView+frame.m in Sources */,
 				0058410622A7B0D4006AC6EA /* XMGFriendTrendViewController.m in Sources */,
 				0058410922A7B0F6006AC6EA /* XMGMeViewController.m in Sources */,
 				0058410322A7B0B6006AC6EA /* XMGNewsViewController.m in Sources */,
+				000ACBC322AA7D0300B32DD8 /* XMGNavBackView.m in Sources */,
 				00F8EC7922A8005D008EBEB8 /* UITabBarItem+fontAndColor.m in Sources */,
 				00F8EC7E22A8FECB008EBEB8 /* UIBarButtonItem+item.m in Sources */,
+				000ACBC022AA7B1B00B32DD8 /* XMGNavigationBar.m in Sources */,
 				005840EA22A7AB47006AC6EA /* main.m in Sources */,
 				00F32C0922A7B5F700B99C9E /* XMGTabBarController.m in Sources */,
 				00F8EC7222A7FB2C008EBEB8 /* XMGPublishViewController.m in Sources */,
@@ -656,7 +686,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuaijianzhiliao.Baisi;
+				PRODUCT_BUNDLE_IDENTIFIER = "lishengpei.GCD---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -677,7 +707,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuaijianzhiliao.Baisi;
+				PRODUCT_BUNDLE_IDENTIFIER = "lishengpei.GCD---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
