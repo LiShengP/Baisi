@@ -35,18 +35,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.interactivePopGestureRecognizer.delegate = self;
-    
     //替换为自定义的navigationBar
     XMGNavigationBar *bar = [[XMGNavigationBar alloc]initWithFrame:self.navigationBar.frame];
     [self setValue:bar forKey:@"navigationBar"];
+    
+    //禁止掉系统左滑功能
+    self.interactivePopGestureRecognizer.enabled = NO;
+    //通过打印interactivePopGestureRecognizer找到系统的target 和action
+    XMGLog(@"%@",self.interactivePopGestureRecognizer);
+    // 自定义手势，实现全局的左滑返回功能
+    id target = self.interactivePopGestureRecognizer.delegate;
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:target action:@selector(handleNavigationTransition:)];
+    panGesture.delegate = self;
+    [self.view addGestureRecognizer:panGesture];
     
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     
-    XMGLog(@"%d",self.childViewControllers.count);
+    XMGLog(@"%ld",self.childViewControllers.count);
     //只有非栈顶控制器，再去自定义返回按钮
     if (self.childViewControllers.count > 0) {
         
