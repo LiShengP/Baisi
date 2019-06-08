@@ -16,7 +16,7 @@
     [super layoutSubviews];
     
     for (UIView *view in self.subviews) {
-        NSLog(@"类名：%@",view);
+        NSLog(@"类：%@",[view class]);
         if ([view isKindOfClass:[XMGNavBackView class]]) {
 //            view.xmg_x = 0;
         }

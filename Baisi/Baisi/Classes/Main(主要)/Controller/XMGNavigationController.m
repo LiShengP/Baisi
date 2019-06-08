@@ -8,8 +8,9 @@
 
 #import "XMGNavigationController.h"
 #import "XMGNavigationBar.h"
+#import "XMGNavBackView.h"
 
-@interface XMGNavigationController ()
+@interface XMGNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -34,20 +35,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.interactivePopGestureRecognizer.delegate = self;
+    
     //替换为自定义的navigationBar
-    XMGNavigationBar *bar = [[XMGNavigationBar alloc]init];
+    XMGNavigationBar *bar = [[XMGNavigationBar alloc]initWithFrame:self.navigationBar.frame];
     [self setValue:bar forKey:@"navigationBar"];
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    
+    XMGLog(@"%d",self.childViewControllers.count);
+    //只有非栈顶控制器，再去自定义返回按钮
+    if (self.childViewControllers.count > 0) {
+        
+        //使用自定义的返回按钮，根据类型调整返回按钮的位置
+        XMGNavBackView *backView = [XMGNavBackView backViewWithTitle:@"返回" norImage:[UIImage imageNamed:@"navigationButtonReturn"] highImage:[UIImage imageNamed:@"navigationButtonReturnClick"] target:self action:@selector(back)];
+        
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:backView];
+        
+        viewController.navigationItem.leftBarButtonItem = backItem;
+    }
+    
+    [super pushViewController:viewController animated:animated];
 }
-*/
+
+- (void)back
+{
+    [self popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+//导航控制器左滑功能
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+//    根控制器不需要左滑
+    return self.childViewControllers.count > 1;
+}
+
 
 @end

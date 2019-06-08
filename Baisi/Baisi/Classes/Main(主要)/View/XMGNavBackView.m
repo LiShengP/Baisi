@@ -23,7 +23,7 @@
     [button sizeToFit];
     button.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
     XMGNavBackView *backView = [[self alloc]initWithFrame:button.bounds];
-    backView.tag = 10001;
+    
     [backView addSubview:button];
     return backView;
 }
